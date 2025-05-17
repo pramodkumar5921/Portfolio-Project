@@ -5,22 +5,27 @@ if (styleSwitcherToggle) {
   })
 }
 
+// Hide style - Switcher on Scroll
 window.addEventListener('scroll', () => {
-  if (document.querySelector('.style-switcher').classList.contains('open')) {
+  if (document.querySelector('.style-switcher').classList.contains('open')) 
+    {
     document.querySelector('.style-switcher').classList.remove('open')
   }
 })
 
-const alternateStyles = document.querySelectorAll('.alternate-style')
-function setActiveStyle (color) {
+/** ============================== theme colors ============================= */
+
+const alternateStyles = document.querySelectorAll('.alternate-style');
+function setActiveStyle(color) {
   alternateStyles.forEach(style => {
-    if (color === style.getAttribute('tittle')) {
-      style.removeAttribute('disabled')
+    if (color === style.getAttribute('title')) { // fixed 'tittle' -> 'title'
+      style.removeAttribute('disabled');
     } else {
-      style.setAttribute('disabled', 'true')
+      style.setAttribute('disabled', 'true');
     }
-  })
+  });
 }
+
 
 const dayNight = document.querySelector('.day-night')
 dayNight.addEventListener('click', () => {
