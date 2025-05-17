@@ -9,11 +9,11 @@
 
 body.shadow-dark
 {
-    --bg-black-900:#151515;
-    --bg-black-100:#222222;
-    --bg-black-50:#393939;
-    --text-black-900:#ffffff;
-    --text-black-700:#e9e9e9;
+    --bg-black-900:#f2f2fc;
+    --bg-black-100:#fdf9ff;
+    --bg-black-50:#e8dfec;
+    --text-black-900:#302e4d;
+    --text-black-700:#504e70;
 }
 
 body{
@@ -52,7 +52,7 @@ ul{
 
 }
 .main-content{
-    padding-left: 120px;
+    padding-left: 270px;
 }
 .padd-15{
     padding-left: 15px;
@@ -151,7 +151,7 @@ ul{
 .aside .logo a{
     color: var(--text-black-900);
     font-weight: 700;
-    background-color: red;
+    /* background-color: red; */
     padding: 15px 20px;
     font-size: 30px;
     letter-spacing: 5px;
@@ -236,7 +236,7 @@ ul{
 }
 .aside .nav li{
     margin-bottom: 20px;
-    background: red;
+    /* background: red; */
     display: block;
 }
 .aside .nav li a{
